@@ -1,3 +1,4 @@
 excel_output/*.*
 logs/*.*
 output/*.*
+.env
