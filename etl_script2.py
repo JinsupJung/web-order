@@ -332,13 +332,13 @@ def etl_process():
                        CASE 
                            WHEN b.contract_no = '2' THEN 
                                CASE 
-                                   WHEN d.PACKAGE_MODEL_TAX = 0 THEN d.MODEL_TAX * a.qty
-                                   ELSE d.PACKAGE_MODEL_TAX  * a.qty
+                                   WHEN d.PACKAGE_MODEL_TAX = 0 THEN d.MODEL_TAX 
+                                   ELSE d.PACKAGE_MODEL_TAX 
                                END 
                            ELSE 
                                CASE 
-                                   WHEN d.PACKAGE_CHAIN_TAX = 0 THEN d.CHAIN_TAX  * a.qty
-                                   ELSE d.PACKAGE_CHAIN_TAX  * a.qty
+                                   WHEN d.PACKAGE_CHAIN_TAX = 0 THEN d.CHAIN_TAX 
+                                   ELSE d.PACKAGE_CHAIN_TAX 
                                END 
                        END AS item_tax,
                        CASE 
